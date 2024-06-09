@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.body {
+    position: relative;
+    height: 100vh;
+    /* width: 100vw; */
+    padding-left: 20%;
+    padding-right: 20%;
+    /* background-color: whitesmoke; */
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.container {
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 3rem;
+    height: 50%;
+}
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.right {
+    padding: 1rem;
+    border-radius: 10px;
+    font-weight: 700;
+    background-color: yellow;
+}
+
+.right:hover {
+    transform: scale(105%);
+    cursor: pointer;
+    transition: 0.8s ease-in-out;
+    background-color: rgb(158, 158, 239);
+    color: white;
+}
+.heading {
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 3.5rem;
+    display: inline;
+}
+
+.entry {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    width: 70%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.title {
+    text-align: center;
+    margin-top: 2rem;
+    font-family: cursive;
+    font-weight: bolder;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.form div:not(:last-child) {
+    width: 70%;
+}
+
+.form label {
+    font-weight: bold;
+    font-family: cursive;
+    color: green;
+}
+
+.form input, .form textarea {
+    background-color: whitesmoke;
+    border: 2px solid rgb(199, 196, 196);
+}
+
+.invisible {
+    display: none;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.task {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: rgb(195, 240, 195);
+}
+
+.task:hover {
+    transform: scale(105%);
+    cursor: pointer;
+    transition: 0.8s ease-in-out;
+}
+
+.details {
+    flex: 80%;
+    position: relative;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    color: rgb(67, 63, 63);
+}
+
+.action {
+    flex: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.details span:last-child{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.action a {
+    text-decoration: none;
+}
